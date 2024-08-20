@@ -1,0 +1,321 @@
+.navbar-container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  
+    .navbar-container-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px;
+    }
+  
+    .navbar-item, .navbar-item-2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+    }
+  
+    .searchbar-white, .whatsapp-white {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .search-icon, .whatsapp-white-icon {
+      width: 100%;
+      height: 100%;
+      color: white;
+    }
+  
+    .items-list, .items-list-2 {
+      display: flex;
+      list-style-type: none;
+      gap: 40px;
+  
+      li {
+        text-transform: uppercase;
+        font-size: 12px;
+        color: white;
+        font-family: 'MyFont2';
+      }
+    }
+  
+    &.scrolled {
+      background-color: var(--secondary-color);
+      color: var(--primary-color);
+  
+      .search-icon, .whatsapp-white-icon,
+      .items-list li, .items-list-2 li {
+        color: var(--primary-color);
+      }
+    }
+  }
+  
+
+.home-banner-container{
+    width: 100%;
+   position: relative;
+
+   .banner-video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+   }
+    video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+  
+    .overlay-fade{
+    background: rgba(0, 0, 0, 0.4); 
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;    
+    }
+
+    .banner-search-container{
+    padding: 250px 0px 150px 0px;
+    z-index: 5;
+    position: relative;
+   
+    }
+
+    h1{
+    font-size:80px;
+    color: var(--secondary-color);
+    font-family: 'MyFont1';
+    font-weight: 400;
+    text-align: center;
+    margin-top: 30px;
+    }
+    .content{
+    font-size:20px;
+    color: var(--secondary-color);
+    text-align: center;  
+    margin-top: 30px;
+    font-family: 'MyFont2';
+    }
+    .home-banner-search-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    // margin-top: 50%;
+     
+    }
+    .search-form-content{
+    width: calc(85% - 140px);
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    }
+    .search-form{
+        width: 140px;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--secondary-color);
+        }
+
+    .buy{
+    display: flex;
+    gap: 120px;
+    color:var(--primary-color);
+    position: relative;
+    left: 15px;
+    font-family: 'MyFont2';
+  
+    }
+    .city{
+        display: flex;
+        gap: 20px;
+        color:var(--primary-color); 
+        font-family: 'MyFont2';
+    }
+    .bedroom{
+    display: flex;
+    gap: 90px;
+    color:var(--primary-color);
+    font-family: 'MyFont2';
+    }
+    .price-range{
+    display: flex;
+    gap: 80px;
+    color:var(--primary-color);
+    font-family: 'MyFont2';
+    }
+    .all-type{
+    display: flex;
+    gap: 100px;
+    color:var(--primary-color);
+    position: relative;
+    right: 15px;
+    font-family: 'MyFont2';
+    }
+    .search-icon-text{ 
+     width: 190px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: var(--primary-color);
+    color:var(--secondary-color);
+    text-transform: uppercase;
+    font-family: 'MyFont2';
+    
+    }
+    .search-icon{
+        position: relative;
+        left: 15px;
+    }
+    .border{
+        height: 44px;
+        border-right: 1px solid lightgray; 
+    }
+    
+} 
+
+.be-inspired-container{
+    width: 100%;
+    .be-inspired-section{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap: 40px;
+     padding: 120px 0px;
+    }
+    .be-inspired-title p{
+     font-size:18px ;
+     color: #606060;
+     font-family: 'MyFont2';
+    }
+    .be-inspired-heading{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+    }
+    .left-right-arrow{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+    .left-arrow{
+        width: 45px;
+        height: 45px;
+        color: #606060;
+      
+    }
+    .right-arrow{
+        width: 45px;
+        height: 45px;
+        color: #606060;
+    }
+    .be-inspired-heading h1 {
+    font-family:'MyFont1';
+    font-size:80px;
+    font-weight: 300;
+    }
+    
+    .be-inspired-list-items{
+      display: flex;
+      gap: 80px;
+      }
+    .be-inspired-list-items li{
+        list-style-type: none;
+        text-transform: uppercase;
+        font-size:12px ;
+        color: #606060;
+        font-family: 'MyFont2';
+      display: flex;
+     align-items: center;
+     justify-content: center;
+    width: 130px;
+    height: 40px;
+    text-align: center;
+        transition: .3s;
+        cursor: pointer;
+    }
+    .be-inspired-list-items li:hover{
+        background-color:#F5F5F5 ;
+        color: var(--primary-color);
+        transition: .3s;
+
+    }
+}
+
+.for-sale-carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    // flex-wrap: wrap;
+    
+
+    .for-sale-item{
+        width: 444px;
+        height: 511px;
+        
+    }
+    .for-sale-image img{
+        width: 410px;
+        height: 320px;
+       }
+       .for-sale-item-list{
+           display: flex;
+           flex-direction: column;
+           gap: 15px;
+       }
+       .for-sale-description{
+        font-size:16px ;
+        color: #606060;
+        font-family: 'MyFont2';
+       }
+       .for-sale-price{
+        font-size:20px ;
+        color: var(--primary-color);
+        font-weight: bold;
+        font-family: 'MyFont2';
+       }
+       .for-sale-place{
+        font-size:16px ;
+        color: #606060;
+        font-family: 'MyFont2';
+       }
+       .for-sale-location{
+        display: flex;
+        gap: 20px;
+        font-size:16px ;
+        color: var(--primary-color);
+        font-family: 'MyFont2';
+        font-weight: normal;
+       }
+       .location-icon{
+        width: 20px;
+        height: 20px;
+        color: var(--primary-color);
+       }
+
+}
+
+
+
+ 
+
+  

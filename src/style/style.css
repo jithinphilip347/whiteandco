@@ -1,0 +1,288 @@
+.navbar-container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.navbar-container .navbar-container-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+}
+.navbar-container .navbar-item, .navbar-container .navbar-item-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.navbar-container .searchbar-white, .navbar-container .whatsapp-white {
+  width: 30px;
+  height: 30px;
+}
+.navbar-container .search-icon, .navbar-container .whatsapp-white-icon {
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+.navbar-container .items-list, .navbar-container .items-list-2 {
+  display: flex;
+  list-style-type: none;
+  gap: 40px;
+}
+.navbar-container .items-list li, .navbar-container .items-list-2 li {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: white;
+  font-family: "MyFont2";
+}
+.navbar-container.scrolled {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+.navbar-container.scrolled .search-icon, .navbar-container.scrolled .whatsapp-white-icon,
+.navbar-container.scrolled .items-list li, .navbar-container.scrolled .items-list-2 li {
+  color: var(--primary-color);
+}
+
+.home-banner-container {
+  width: 100%;
+  position: relative;
+}
+.home-banner-container .banner-video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.home-banner-container video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home-banner-container .overlay-fade {
+  background: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.home-banner-container .banner-search-container {
+  padding: 250px 0px 150px 0px;
+  z-index: 5;
+  position: relative;
+}
+.home-banner-container h1 {
+  font-size: 80px;
+  color: var(--secondary-color);
+  font-family: "MyFont1";
+  font-weight: 400;
+  text-align: center;
+  margin-top: 30px;
+}
+.home-banner-container .content {
+  font-size: 20px;
+  color: var(--secondary-color);
+  text-align: center;
+  margin-top: 30px;
+  font-family: "MyFont2";
+}
+.home-banner-container .home-banner-search-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.home-banner-container .search-form-content {
+  width: calc(85% - 140px);
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-color);
+}
+.home-banner-container .search-form {
+  width: 140px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+}
+.home-banner-container .buy {
+  display: flex;
+  gap: 120px;
+  color: var(--primary-color);
+  position: relative;
+  left: 15px;
+  font-family: "MyFont2";
+}
+.home-banner-container .city {
+  display: flex;
+  gap: 20px;
+  color: var(--primary-color);
+  font-family: "MyFont2";
+}
+.home-banner-container .bedroom {
+  display: flex;
+  gap: 90px;
+  color: var(--primary-color);
+  font-family: "MyFont2";
+}
+.home-banner-container .price-range {
+  display: flex;
+  gap: 80px;
+  color: var(--primary-color);
+  font-family: "MyFont2";
+}
+.home-banner-container .all-type {
+  display: flex;
+  gap: 100px;
+  color: var(--primary-color);
+  position: relative;
+  right: 15px;
+  font-family: "MyFont2";
+}
+.home-banner-container .search-icon-text {
+  width: 190px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  font-family: "MyFont2";
+}
+.home-banner-container .search-icon {
+  position: relative;
+  left: 15px;
+}
+.home-banner-container .border {
+  height: 44px;
+  border-right: 1px solid lightgray;
+}
+
+.be-inspired-container {
+  width: 100%;
+}
+.be-inspired-container .be-inspired-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 120px 0px;
+}
+.be-inspired-container .be-inspired-title p {
+  font-size: 18px;
+  color: #606060;
+  font-family: "MyFont2";
+}
+.be-inspired-container .be-inspired-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+.be-inspired-container .left-right-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.be-inspired-container .left-arrow {
+  width: 45px;
+  height: 45px;
+  color: #606060;
+}
+.be-inspired-container .right-arrow {
+  width: 45px;
+  height: 45px;
+  color: #606060;
+}
+.be-inspired-container .be-inspired-heading h1 {
+  font-family: "MyFont1";
+  font-size: 80px;
+  font-weight: 300;
+}
+.be-inspired-container .be-inspired-list-items {
+  display: flex;
+  gap: 80px;
+}
+.be-inspired-container .be-inspired-list-items li {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #606060;
+  font-family: "MyFont2";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 40px;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.be-inspired-container .be-inspired-list-items li:hover {
+  background-color: #F5F5F5;
+  color: var(--primary-color);
+  transition: 0.3s;
+}
+
+.for-sale-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.for-sale-carousel .for-sale-item {
+  width: 444px;
+  height: 511px;
+}
+.for-sale-carousel .for-sale-image img {
+  width: 410px;
+  height: 320px;
+}
+.for-sale-carousel .for-sale-item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.for-sale-carousel .for-sale-description {
+  font-size: 16px;
+  color: #606060;
+  font-family: "MyFont2";
+}
+.for-sale-carousel .for-sale-price {
+  font-size: 20px;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-family: "MyFont2";
+}
+.for-sale-carousel .for-sale-place {
+  font-size: 16px;
+  color: #606060;
+  font-family: "MyFont2";
+}
+.for-sale-carousel .for-sale-location {
+  display: flex;
+  gap: 20px;
+  font-size: 16px;
+  color: var(--primary-color);
+  font-family: "MyFont2";
+  font-weight: normal;
+}
+.for-sale-carousel .location-icon {
+  width: 20px;
+  height: 20px;
+  color: var(--primary-color);
+}/*# sourceMappingURL=style.css.map */
